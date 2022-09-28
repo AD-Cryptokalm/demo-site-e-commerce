@@ -32,6 +32,14 @@ const NavBar = () => {
               ></i>
             </div>
           </NavLink>
+          <NavLink to={"/cart"}>
+            <div className="icon-cart">
+              <div className="number-product-cart">1</div>
+              <i className="fa-solid fa-cart-shopping btn-profil"
+                alt="cart"
+              ></i>
+            </div>
+          </NavLink>
             <Logout />
           </div>
         ) : (

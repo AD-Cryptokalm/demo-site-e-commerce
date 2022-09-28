@@ -10,17 +10,14 @@ const Message = () => {
       </div>
       <div className="wrapper">
         <div className="appear" id="h1-cat">
-        <p>toutes nos créations</p>
+          <p>toutes nos créations</p>
         </div>
       </div>
       <div className="wrapper">
         <div className="appear" id="h1-cat">
-        <p>artisanales</p>
+          <p>artisanales</p>
         </div>
       </div>
-
-      
-      
     </div>
   );
 };

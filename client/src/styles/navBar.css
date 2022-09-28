@@ -32,6 +32,7 @@ h1 {
 
 h4 {
     margin-right: 2rem;
+    margin-bottom: -5px;
 }
 
 .welcomeLogout-container {
@@ -46,7 +47,7 @@ h4 {
     transition: all .3s ease-in-out;
     cursor: pointer;
     color: rgb(140, 106, 44);
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .btn-logout:hover {
@@ -56,10 +57,9 @@ h4 {
     transition: all .3s ease-in-out;
     cursor: pointer;
     color: rgb(140, 106, 44);
-    
     font-size: 2.5rem;
     margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btn-profil:hover {
@@ -68,6 +68,20 @@ h4 {
 
 .btn-login {
     margin-right: 15rem;
+}
+.icon-cart {
+    position: relative;
+}
+
+.number-product-cart {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    right: 2rem;
+    background: grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 663px){

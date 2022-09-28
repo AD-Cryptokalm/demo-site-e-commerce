@@ -22,14 +22,14 @@ const LoginForm = () => {
         password,
       },
     })
-    .then((res) => {
-        localStorage.setItem('token', res.data.token)
-        localStorage.setItem('userId', res.data.userId)
-        console.log(res.data)
+      .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("userId", res.data.userId);
+        console.log(res.data);
         window.location = "/";
       })
       .catch((err) => {
-        console.log(err)
+        console.log(err);
         if (err.response.data.errors) {
           emailError.innerHTML = err.response.data.errors.email;
         } else if (err.response.data.errors) {
