@@ -1,0 +1,25 @@
+:root {
+  font-size: 62.5%
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+body {
+  /* background-color: #f9ebe4; */
+  /* font-family: 'Dancing Script', sans-serif; */
+  z-index: -10;
+  /* background-color: peru; */
+  background-image: url("../../public/woodBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  
+}
+

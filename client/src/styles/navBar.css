@@ -1,0 +1,85 @@
+.navBar {
+   
+    border: solid 3px rgb(140, 106, 44);
+    border-top: transparent;
+    box-shadow: 3px 3px 11px -4px #000000;
+    height: 20%;
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius:  0px 0px 25px 25px;
+    /* background-image: url("../../public/backNavbar.png"); */
+    background-image: inherit;
+    
+}
+h1 {
+    font-size: calc(4rem + 2vw);
+}
+
+
+
+.logo-img img {
+    margin-left: 2.5rem;
+    width: 15rem;
+    position: relative;
+    /* top: -130px; */
+    /* z-index: -1; */
+}
+
+h4 {
+    margin-right: 2rem;
+}
+
+.welcomeLogout-container {
+    display: flex;
+    font-size: 2.6rem;
+    margin-right: 2rem;
+    margin-top: 1.6rem;
+    align-items: center;
+}
+
+.btn-logout {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    color: rgb(140, 106, 44);
+    padding-top: 2rem;
+}
+
+.btn-logout:hover {
+    transform: scale(1.12); 
+}
+.btn-profil {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    color: rgb(140, 106, 44);
+    
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-profil:hover {
+    transform: scale(1.12); 
+}
+
+.btn-login {
+    margin-right: 15rem;
+}
+
+@media only screen and (max-width: 663px){
+    .welcomeLogout-container {
+        margin-bottom: 1rem;
+    }   
+}
+
+.welcome {
+    margin: 0 2rem;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+

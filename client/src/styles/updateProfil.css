@@ -1,0 +1,9 @@
+.name-profil {
+    margin-top: 2.5rem;
+}
+
+.profil-container button {
+    margin-left: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+}
