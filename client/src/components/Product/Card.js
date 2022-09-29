@@ -20,40 +20,7 @@ const Card = ({ product }) => {
     dispatch(getProduct(id))
   }
 
-  // const addCart = () => {
-  //   // console.log(product)
-
-  //   let productsArray = localStorage.getItem("products");
-  //   // console.table(productsArray)
-
-  //   if (productsArray == null) {
-  //     productsArray = [];
-  //     productsArray.push(product);
-  //     console.table(productsArray);
-  //     localStorage.setItem("products", JSON.stringify(productsArray));
-  //     // console.log(productsArray[0]._id)
-
-  //     alert("Ajout au panier réussi");
-  //   }
-  //   else if (productsArray != null){
-  //     localStorage.getItem("products", JSON.parse(productsArray));
-  //     console.table(productsArray);
-
-  //     for (let index = 0; index < productsArray.length; index++) {
-  //       if (productsArray[index]._id !== product._id) {
-  //         console.log(productsArray[index]._id, product._id)
-  //         return (
-  //           productsArray = JSON.parse(localStorage.getItem("products")),
-  //           productsArray.push(product),
-  //           localStorage.setItem("products", JSON.stringify(productsArray))
-  //         )
-  //       }
-
-  //     }
-  //     console.log(productsArray);
-  //     console.log("test")
-  //   }
-  // };
+  // 
 
   return (
     <div className="card-container" key={product._id}>

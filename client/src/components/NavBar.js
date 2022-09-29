@@ -1,14 +1,21 @@
 import { useContext } from "react";
-import { useSelector} from 'react-redux'
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../components/AppContext";
 import "../styles/navBar.css";
 import Logout from "./Log/Logout";
 
-
 const NavBar = () => {
   const uid = useContext(AuthContext);
-  const userData = useSelector((state) => state.userReducer)
+  const userData = useSelector((state) => state.userReducer);
+  
+  let productsArray = JSON.parse(localStorage.getItem("products"))
+  const number = productsArray.length;
+  
+  
+
+ 
+ 
 
   return (
     <div>
@@ -25,21 +32,19 @@ const NavBar = () => {
           <div className="welcomeLogout-container">
             <h4>Bienvenue {userData.firstName}</h4>
             <NavLink to={"/profil"}>
-            <div className="icon-profil">
-              <i
-                className="fa-solid fa-user btn-profil"
-                alt="profil"
-              ></i>
-            </div>
-          </NavLink>
-          <NavLink to={"/cart"}>
-            <div className="icon-cart">
-              <div className="number-product-cart">1</div>
-              <i className="fa-solid fa-cart-shopping btn-profil"
-                alt="cart"
-              ></i>
-            </div>
-          </NavLink>
+              <div className="icon-profil">
+                <i className="fa-solid fa-user btn-profil" alt="profil"></i>
+              </div>
+            </NavLink>
+            <NavLink to={"/cart"}>
+              <div className="icon-cart">
+                <div className="number-product-cart" id="nb">{number}</div>
+                <i
+                  className="fa-solid fa-cart-shopping btn-profil"
+                  alt="cart"
+                ></i>
+              </div>
+            </NavLink>
             <Logout />
           </div>
         ) : (
