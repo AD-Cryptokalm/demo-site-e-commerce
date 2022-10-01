@@ -16,7 +16,7 @@ const index = () => {
     <BrowserRouter>
     <NavBar/>
       <Routes>
-        <Route path="/product" element={<Product/>} />
+        <Route path="/product/:id" element={<Product/>} />
         <Route path="/" element={<Accueil />} />
         <Route path="/bijoux" element={<Bijoux />} />
         <Route path="/bracelet-pierre" element={<BraceletPierre />} />
