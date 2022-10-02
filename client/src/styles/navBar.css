@@ -14,7 +14,14 @@
     border-radius:  0px 0px 25px 25px;
     /* background-image: url("../../public/backNavbar.png"); */
     background-image: inherit;
+    position: relative;
     
+}
+.icon-back {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    font-size: calc(2rem + 0.5vw);
 }
 h1 {
     font-size: calc(4rem + 2vw);
