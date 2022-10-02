@@ -8,9 +8,12 @@ const ProductPage = () => {
   const [loadProduct, setLoadProduct] = useState(true)
   const productUrl = window.location.pathname.split("/product/");
   const productId = productUrl[1];
+  
   const dispatch = useDispatch();
   // console.log(productId);
   const product = useSelector((state) => state.productReducer);
+
+  
   
   useEffect(() => {
     if (loadProduct) {
@@ -87,7 +90,9 @@ const ProductPage = () => {
               <h3>{product.name}</h3>
               <p className="price-product">{product.price}€</p>
             </div>
+            <div >
             <AddCart/>
+            </div>
           </div>
           <div className="description">{product.description}</div>
         </div>

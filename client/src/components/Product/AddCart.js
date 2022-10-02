@@ -3,11 +3,16 @@ import { useSelector } from "react-redux";
 
 const AddCart = () => {
   const product = useSelector((state) => state.productReducer);
-  console.log(product);
+  //   console.log(product);
+
+  const nb = document.getElementById("nb");
+  
 
   const addCartProduct = () => {
+    console.log(nb);
+    
     let productsArray = localStorage.getItem("products");
-
+    // window.location.reload();
     if (productsArray == null) {
       productsArray = [];
       productsArray.push(product);
@@ -37,7 +42,9 @@ const AddCart = () => {
           return (
             productsArray.push(product),
             localStorage.setItem("products", JSON.stringify(productsArray)),
-            (productsArray = JSON.parse(localStorage.getItem("products")))
+            (productsArray = JSON.parse(localStorage.getItem("products"))),
+            nb.innerHTML = productsArray.length,
+            alert("Ajout au panier réussi")
           );
         }
         //   } else {
@@ -47,6 +54,7 @@ const AddCart = () => {
         //   }
       }
 
+      //   window.location.reload
       // console.log(productsArray);
       // console.log("test")
     }

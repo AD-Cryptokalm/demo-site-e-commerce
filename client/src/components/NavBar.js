@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../components/AppContext";
@@ -16,7 +16,9 @@ const NavBar = () => {
   }
   const number = productsArray.length;
   
-  
+  // useEffect(() => {
+  //   if (productsArray.length > number);
+  // }, [number,productsArray.length ])
 
  
  
