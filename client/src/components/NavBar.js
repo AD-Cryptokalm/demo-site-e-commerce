@@ -10,6 +10,10 @@ const NavBar = () => {
   const userData = useSelector((state) => state.userReducer);
   
   let productsArray = JSON.parse(localStorage.getItem("products"))
+
+  if (productsArray == null) {
+    productsArray = [];
+  }
   const number = productsArray.length;
   
   

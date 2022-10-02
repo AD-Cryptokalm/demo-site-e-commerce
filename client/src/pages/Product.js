@@ -1,28 +1,23 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useLocation, useSearchParams } from "react-router-dom";
 import { getProduct } from "../actions/productAction";
-import { isEmpty } from "../components/Utils";
-// import { isEmpty } from "../components/Utils";
+import AddCart from "../components/Product/AddCart";
 import "../styles/productPage.css";
-// export const GET_PRODUCT = "GET_PRODUCT"
+
 const ProductPage = () => {
   const [loadProduct, setLoadProduct] = useState(true)
-  // const [product, setProduct] = useState("");
   const productUrl = window.location.pathname.split("/product/");
   const productId = productUrl[1];
   const dispatch = useDispatch();
-  console.log(productId);
+  // console.log(productId);
   const product = useSelector((state) => state.productReducer);
-  // const product = [];
+  
   useEffect(() => {
     if (loadProduct) {
       dispatch(getProduct(productId));
       setLoadProduct(false)
     }
-  }, [loadProduct, dispatch])
+  }, [loadProduct, productId, dispatch])
   // axios({
   //   method: "GET",
   //   url: `http://localhost:3000/api/product/${productId}`,
@@ -92,10 +87,7 @@ const ProductPage = () => {
               <h3>{product.name}</h3>
               <p className="price-product">{product.price}€</p>
             </div>
-            <i
-              className="fa-solid fa-cart-plus btn-profil"
-              
-            ></i>
+            <AddCart/>
           </div>
           <div className="description">{product.description}</div>
         </div>
