@@ -12,14 +12,14 @@ const AddCart = () => {
     if (uid) {
       let productsArray = localStorage.getItem("products");
 
-      if (productsArray == null) {
+      if (productsArray == null || undefined) {
         productsArray = [];
         productsArray.push(product);
         console.log(productsArray);
         localStorage.setItem("products", JSON.stringify(productsArray));
         alert("Ajout au panier réussi");
-      } else if (productsArray != null) {
-        productsArray = JSON.parse(localStorage.getItem("products"));
+      } else if (productsArray != null || undefined) {
+        productsArray = JSON.parse(localStorage.getItem("products")) ;
 
         for (let index = 0; index < productsArray.length; index++) {
           console.log(productsArray.length);

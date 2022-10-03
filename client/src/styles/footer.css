@@ -1,6 +1,8 @@
 .footer {
-    width: 97%;
-    margin: 0 auto;
+    position: absolute;
+    bottom: -15rem;
+    width: 100%;
+    /* margin: 0 2rem; */
     border: solid 3px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
     border-bottom: transparent;

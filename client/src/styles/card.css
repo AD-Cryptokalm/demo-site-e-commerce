@@ -1,14 +1,18 @@
 .ulProduct {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2rem;
+}
+.product-container {
+    padding: 0 2rem;
 }
 
 .card-container {
     margin: 2rem;
-    width: 18%; 
+    /* width: 20%;  */
     position: relative; 
+    /* flex-wrap: wrap; */
 }
 
 .card-product {
@@ -20,8 +24,10 @@
     padding: 1rem;
     width: 100%;
     min-width: 20rem;
-    height: 30rem;
+    /* max-width: 150px; */
+    height: 28rem;
     transition: all .2s ease-in-out;
+    
     
 }
 .card-product:hover {

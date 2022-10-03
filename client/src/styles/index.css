@@ -14,10 +14,12 @@ body {
   /* background-color: #f9ebe4; */
   /* font-family: 'Dancing Script', sans-serif; */
   z-index: -10;
+  height: 100vh;
   /* background-color: peru; */
   background-image: url("../../public/woodBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 

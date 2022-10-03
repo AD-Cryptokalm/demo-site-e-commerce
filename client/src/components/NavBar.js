@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../components/AppContext";
-import ProductPage from "../pages/Product";
+// import ProductPage from "../pages/Product";
 import "../styles/navBar.css";
 import Logout from "./Log/Logout";
 
@@ -14,6 +14,7 @@ const NavBar = () => {
 
   if (productsArray == null) {
     productsArray = [];
+    
   }
   const number = productsArray.length;
 

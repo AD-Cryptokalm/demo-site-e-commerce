@@ -1,47 +1,81 @@
-import Card from "../components/Product/Card";
+
 import { isEmpty } from "../components/Utils";
 import "../styles/cart.css";
 
-
 const Cart = () => {
-    const products = JSON.parse(localStorage.getItem("products"));
-    let totalProducts = [];
+  
+  const nb = document.getElementById("nb");
+  const products = JSON.parse(localStorage.getItem("products"));
+  
+  if (products == null) {
+    return [];
+  }
+  
+  let totalProducts = [];
+  // let corbeille = document.querySelector(".deleteItem");
 
-    const deleteProduct = () => {
-      let corbeille = document.querySelectorAll(".deleteItem");
-      const products = JSON.parse(localStorage.getItem("products"));
-      console.log(products.length)
+  const deleteProduct = () => {
+    const products = JSON.parse(localStorage.getItem("products"));
+    console.log(products.length);
+    const product = document.getElementById("dlt").getAttribute("value");
+    console.log(product);
+
+    if (product.length == null) {
+      nb.innerText = 0;
       
-      if (products.length == 0) {
-        return localStorage.removeItem("products")
-      } else {
-        totalProducts = products.filter((e) => {
-          if (
-            corbeille.dataset._id !== e._id 
-          ) {
-            return true;
-          }
-        });
-        localStorage.setItem("products", JSON.stringify(totalProducts))
-      }
+    } 
+
+    let totalDelete = products.length;
+
+    if (totalDelete === 1) {
+      return (
+        localStorage.removeItem("products"),
+        JSON.parse(localStorage.getItem("products"))
+        // cartEmpty.innerText = "Votre panier est vide"
+        // (nb.innerHTML = products.length)
+      );
+      // window.location.href("/")
+    } else {
+      totalProducts = products.filter((e) => {
+        console.log(product, e._id);
+        if (product !== e._id) {
+          return true;
+        }
+        return null
+      });
+      localStorage.setItem("products", JSON.stringify(totalProducts));
+      nb.innerHTML = products.length;
+      window.location.reload(true)
+
     }
-    
+  };
+  JSON.parse(localStorage.getItem("products"));
+
   return (
     <div className="order-container">
       <ul className="allProduct-order">
+
         {!isEmpty(products[0]) &&
           products.map((product) => {
             return (
               <div className="product-order" key={product._id}>
-                <img className="img-productOrder" src={product.imageUrl}/>
+                <img
+                  className="img-productOrder"
+                  src={product.imageUrl}
+                  alt="img produit"
+                />
                 <div>{product.name}</div>
                 <div>{product.price}€</div>
-                <i className="fa-solid fa-trash-can btn-profil deleteItem" onClick={deleteProduct} data-id={product._id}></i>
+                <i
+                  className="fa-solid fa-trash-can btn-profil deleteItem dataset"
+                  onClick={deleteProduct}
+                  id="dlt"
+                  value={product._id}
+                ></i>
               </div>
             );
           })}
       </ul>
-      
     </div>
   );
 };

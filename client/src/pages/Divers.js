@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../actions/productsAction";
 import Card from "../components/Product/Card";
 import { isEmpty } from "../components/Utils";
+import '../styles/card.css'
 
 const Divers = () => {
   const [loadProduct, setLoadProduct] = useState(true);
@@ -17,7 +18,9 @@ const Divers = () => {
   }, [loadProduct, dispatch]);
 
   return (
-    <div>
+    <div className="product-container">
+      <br/>
+      <h3>Divers</h3>
       <ul className="ulProduct">
         {!isEmpty(products[0]) &&
           products.map((product) => {
