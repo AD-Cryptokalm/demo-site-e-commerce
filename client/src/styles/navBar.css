@@ -3,7 +3,6 @@
     border: solid 3px rgb(140, 106, 44);
     border-top: transparent;
     box-shadow: 3px 3px 11px -4px #000000;
-    height: 20%;
     width: 97%;
     margin: 0 auto;
     display: flex;
@@ -13,7 +12,7 @@
     background-color: white;
     border-radius:  0px 0px 25px 25px;
     /* background-image: url("../../public/backNavbar.png"); */
-    background-image: inherit;
+    /* background-image: inherit; */
     position: relative;
     
 }
@@ -23,19 +22,22 @@
     bottom: 1rem;
     font-size: calc(2rem + 0.5vw);
 }
-h1 {
-    font-size: calc(4rem + 2vw);
-}
-
-
-
 .logo-img img {
     margin-left: 2.5rem;
-    width: 15rem;
-    position: relative;
+    width: 18rem;
+    /* position: relative; */
     /* top: -130px; */
     /* z-index: -1; */
 }
+
+h1 {
+    font-size: calc(3rem + 2vw);
+    
+}
+
+
+
+
 
 h4 {
     margin-right: 2rem;

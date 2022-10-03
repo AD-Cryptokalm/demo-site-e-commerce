@@ -9,7 +9,7 @@ import Logout from "./Log/Logout";
 const NavBar = () => {
   const uid = useContext(AuthContext);
   const userData = useSelector((state) => state.userReducer);
-  
+
   let productsArray = JSON.parse(localStorage.getItem("products"));
 
   if (productsArray == null) {
@@ -21,14 +21,14 @@ const NavBar = () => {
     <div>
       <div className="navBar">
        
-        <NavLink to="/">
-      <i className="fa-solid fa-left-long icon-back btn-profil"></i>
-        </NavLink>
-       
+
         <NavLink to="/">
           <div className="logo logo-img">
             <img src="../../logo.png" alt="logo entreprise" />
           </div>
+        </NavLink>
+        <NavLink to="/">
+          <i className="fa-solid fa-left-long icon-back btn-profil"></i>
         </NavLink>
         <div>
           <h1>Mon Univers Enchanté</h1>
@@ -55,14 +55,18 @@ const NavBar = () => {
             <Logout />
           </div>
         ) : (
-          <NavLink to={"/connexion"}>
+          <>
             <div className="welcomeLogout-container btn-login">
-              <i
-                className="fa-solid fa-right-to-bracket btn-logout"
-                alt="se connecter"
-              ></i>
+            
+              <NavLink to={"/connexion"}>
+                <i
+                  className="fa-solid fa-right-to-bracket btn-logout"
+                  alt="se connecter"
+                ></i>
+              </NavLink>
+              
             </div>
-          </NavLink>
+          </>
         )}
       </div>
     </div>
