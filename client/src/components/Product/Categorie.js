@@ -3,11 +3,7 @@ import React from "react";
 const Categorie = () => {
   return (
     <div className="cat-container">
-      <div className="wrapper">
-        <div className="appear" id="h1-cat">
-          <h2>Catégories :</h2>
-        </div>
-      </div>
+      
       <div className="wrapper">
         <div className="appear" id="cat1">
           <a href="bijoux" className="">

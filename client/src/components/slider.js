@@ -5,7 +5,7 @@ import "../styles/carousel.css";
 
 const Slider = () => {
   return (
-    <Carousel interval={4000}>
+    <Carousel interval={500000}>
       <div className="img-caroussel ">
         <img src="bijoux.png" alt="categorie bijoux"/>
         <p>Bijoux bois et résine</p>

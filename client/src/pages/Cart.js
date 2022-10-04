@@ -6,13 +6,14 @@ const Cart = () => {
   
   const nb = document.getElementById("nb");
   const products = JSON.parse(localStorage.getItem("products"));
-  
+  if (!products) {
+    return window.location.href = "/";
+  }
   if (products == null) {
     return [];
   }
   
   let totalProducts = [];
-  // let corbeille = document.querySelector(".deleteItem");
 
   const deleteProduct = () => {
     const products = JSON.parse(localStorage.getItem("products"));
@@ -30,9 +31,10 @@ const Cart = () => {
     if (totalDelete === 1) {
       return (
         localStorage.removeItem("products"),
-        JSON.parse(localStorage.getItem("products"))
+        JSON.parse(localStorage.getItem("products")),
         // cartEmpty.innerText = "Votre panier est vide"
         // (nb.innerHTML = products.length)
+        window.location.reload(true)
       );
       // window.location.href("/")
     } else {

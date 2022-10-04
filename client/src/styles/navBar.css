@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
+    /* background-color: white; */
     border-radius:  0px 0px 25px 25px;
     /* background-image: url("../../public/backNavbar.png"); */
     /* background-image: inherit; */
@@ -19,7 +19,7 @@
 .icon-back {
     position: absolute;
     left: 1rem;
-    bottom: 1rem;
+    top: 1rem;
     font-size: calc(2rem + 0.5vw);
 }
 .logo-img img {
@@ -32,6 +32,10 @@
 
 h1 {
     font-size: calc(3rem + 2vw);
+    color: rgb(140, 106, 44);
+    /* background-color: rgba(140, 106, 44, 0.484); */
+    border-radius: 50px;
+    padding: 1rem 2rem;
     
 }
 
@@ -46,10 +50,12 @@ h4 {
 
 .welcomeLogout-container {
     display: flex;
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin-right: 2rem;
     margin-top: 1.6rem;
     align-items: center;
+    color: rgb(140, 106, 44);
+    font-weight: bold;
 }
 
 .btn-logout {
@@ -80,13 +86,18 @@ h4 {
 }
 .icon-cart {
     position: relative;
+    margin-right: 1rem;
 }
 
 .number-product-cart {
     position: absolute;
+    color: #000000;
     font-size: 12px;
     font-weight: bold;
-    right: 2rem;
+    left: 50%;
+    top: 50%;
+    
+    /* right: 2rem */
     background: grey;
     width: 20px;
     height: 20px;
@@ -95,7 +106,7 @@ h4 {
 
 @media only screen and (max-width: 663px){
     .welcomeLogout-container {
-        margin-bottom: 1rem;
+        color: red;
     }   
 }
 
