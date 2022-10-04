@@ -1,5 +1,4 @@
 .navBar {
-   
     border: solid 3px rgb(140, 106, 44);
     border-top: transparent;
     box-shadow: 3px 3px 11px -4px #000000;
@@ -9,12 +8,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.289);
     border-radius:  0px 0px 25px 25px;
-    /* background-image: url("../../public/backNavbar.png"); */
-    /* background-image: inherit; */
     position: relative;
-    
 }
 .icon-back {
     position: absolute;
@@ -25,18 +21,13 @@
 .logo-img img {
     margin-left: 2.5rem;
     width: 18rem;
-    /* position: relative; */
-    /* top: -130px; */
-    /* z-index: -1; */
 }
-
 h1 {
     font-size: calc(3rem + 2vw);
     color: rgb(140, 106, 44);
     /* background-color: rgba(140, 106, 44, 0.484); */
     border-radius: 50px;
     padding: 1rem 2rem;
-    
 }
 
 

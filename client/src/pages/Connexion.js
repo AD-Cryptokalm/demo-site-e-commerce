@@ -12,7 +12,6 @@ export const Connexion = () => {
             {uid ? (
                 <h1>Update</h1>
             ) : (
-
             <Log/>
             )}
         </div>

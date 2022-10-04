@@ -1,12 +1,10 @@
 .footer {
-    position: absolute;
     bottom: -15rem;
     width: 100%;
-    /* margin: 0 2rem; */
     border: solid 3px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
     border-bottom: transparent;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.703);
     border-radius:   25px 25px 0px 0px;
     display: flex;
     justify-content: space-around;
@@ -18,10 +16,11 @@
 }
 .block-footer a{
     font-size: calc(0.7rem + 1vw);
+    color: rgb(117, 89, 36);
 }
 .block-footer h3 {
     font-size: calc(0.8rem + 1vw);
-    color: #000000;
+    color: rgb(117, 89, 36);
     font-weight: bold;
 }
 .footer a {
@@ -30,6 +29,3 @@
 .footer  a:hover {
     transform: scale(1.12);
   }
-/* .about a {
-    font-size: calc(1rem + 1vw);
-} */

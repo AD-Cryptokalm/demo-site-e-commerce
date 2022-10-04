@@ -8,7 +8,6 @@ const footer = () => {
                 <a href="/a-propos">Qui sommes nous ?</a>
                 <a href="/mentions-legales">Mentions légales</a>
                 <a href="/politique-confidentialite">Politique de confidentialité</a>
-                
             </div>
             <div className="block-footer mon-compte">
                 <h3>MON COMPTE</h3>

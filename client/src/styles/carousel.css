@@ -1,29 +1,43 @@
 .carousel {
     height: 20%;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
 }
+
 .img-caroussel {
-    object-fit: cover;
-    width: 35rem;
-    height: 30rem;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-    /* border: solid 3px rgb(140, 106, 44); */
-    border-radius: 20px;
-    box-shadow: 3px 3px 11px -4px #000000;
-    
-   
+  object-fit: cover;
+  width: calc(10rem + 16vw);
+  height: calc(17rem + 18vh);
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  /* border: solid 3px rgb(140, 106, 44); */
+  border-radius: 20px;
+  box-shadow: 3px 3px 11px -4px #000000;
 }
 
 .img-caroussel img {
-    border: solid 2px rgb(140, 106, 44);
-    width: 35rem;
-    height: 30rem;
-    border-radius: 20px;
-    box-shadow: 3px 3px 11px -4px #000000;
-    margin-bottom: 10px;
+  border: solid 2px rgb(140, 106, 44);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 11px -4px #000000;
+  margin-bottom: 10px;
 }
 .img-caroussel p {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-  }
+  font-size: 3rem;
+  font-weight: bold;
+  
+  padding-bottom: 1rem;
+  /* margin-bottom: 3rem; */
+}
+.thumb {
+    opacity: 0.75;
+    
+}
+.thumb img {
+    object-fit: cover;
+}
+.control-dots {
+    display: none;
+}
 

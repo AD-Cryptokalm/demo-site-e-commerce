@@ -23,7 +23,6 @@ const Cart = () => {
 
     if (product.length == null) {
       nb.innerText = 0;
-      
     } 
 
     let totalDelete = products.length;
@@ -32,11 +31,8 @@ const Cart = () => {
       return (
         localStorage.removeItem("products"),
         JSON.parse(localStorage.getItem("products")),
-        // cartEmpty.innerText = "Votre panier est vide"
-        // (nb.innerHTML = products.length)
         window.location.reload(true)
       );
-      // window.location.href("/")
     } else {
       totalProducts = products.filter((e) => {
         console.log(product, e._id);
@@ -48,15 +44,12 @@ const Cart = () => {
       localStorage.setItem("products", JSON.stringify(totalProducts));
       nb.innerHTML = products.length;
       window.location.reload(true)
-
     }
   };
   JSON.parse(localStorage.getItem("products"));
-
   return (
     <div className="order-container">
       <ul className="allProduct-order">
-
         {!isEmpty(products[0]) &&
           products.map((product) => {
             return (

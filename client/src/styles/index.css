@@ -15,6 +15,8 @@ body {
   /* font-family: 'Dancing Script', sans-serif; */
   z-index: -10;
   height: 100vh;
+  /* max-width: 135.3rem; */
+  margin: 0 auto;
   /* background-color: peru; */
   background-image: url("../../public/woodBackground.png");
   background-repeat: no-repeat;

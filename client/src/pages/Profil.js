@@ -1,24 +1,21 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../components/AppContext';
-import UpdateProfil from '../components/UpdateProfil';
-import Accueil from '../pages/Accueil'
+import React, { useContext } from "react";
+import { AuthContext } from "../components/AppContext";
+import UpdateProfil from "../components/UpdateProfil";
+import Accueil from "../pages/Accueil";
 
 const Profil = () => {
-    const uid = useContext(AuthContext);
-    return (
-        <>
-        {uid ? (
-            <div>
-            <UpdateProfil/>
+  const uid = useContext(AuthContext);
+  return (
+    <>
+      {uid ? (
+        <div>
+          <UpdateProfil />
         </div>
-        ):(
-            <>
-            <Accueil/>
-            </>
-        )}
-        
-        </>
-    );
+      ) : (
+        <Accueil />
+      )}
+    </>
+  );
 };
 
 export default Profil;

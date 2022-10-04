@@ -14,15 +14,12 @@ const NavBar = () => {
 
   if (productsArray == null) {
     productsArray = [];
-    
   }
   const number = productsArray.length;
 
   return (
     <div>
       <div className="navBar">
-       
-
         <NavLink to="/">
           <div className="logo logo-img">
             <img src="../../logo.png" alt="logo entreprise" />
@@ -58,14 +55,12 @@ const NavBar = () => {
         ) : (
           <>
             <div className="welcomeLogout-container btn-login">
-            
               <NavLink to={"/connexion"}>
                 <i
                   className="fa-solid fa-right-to-bracket btn-logout"
                   alt="se connecter"
                 ></i>
               </NavLink>
-              
             </div>
           </>
         )}
