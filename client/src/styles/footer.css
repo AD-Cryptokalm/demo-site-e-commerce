@@ -1,14 +1,17 @@
 .footer {
     bottom: -15rem;
-    width: 100%;
+    width: 97%;
+    margin: 0 auto;
     border: solid 3px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
     border-bottom: transparent;
-    background-color: rgba(255, 255, 255, 0.703);
+    background: white;
     border-radius:   25px 25px 0px 0px;
     display: flex;
     justify-content: space-around;
     padding: 1.6rem;
+    position: relative;
+    bottom: 0;
 }
 .block-footer {
     display: flex;

@@ -8,9 +8,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.289);
+    background-color: rgba(255, 255, 255, 0.998);
     border-radius:  0px 0px 25px 25px;
     position: relative;
+}
+@media only screen and (max-width: 1030px){
+    .navBar {
+        flex-direction: column;  
+    }   
 }
 .icon-back {
     position: absolute;
@@ -18,12 +23,17 @@
     top: 1rem;
     font-size: calc(2rem + 0.5vw);
 }
+.logo.logo-img {
+    height: 12rem;
+}
 .logo-img img {
     margin-left: 2.5rem;
+    margin-top: -1rem;
+    /* position: relative; */
     width: 18rem;
 }
 h1 {
-    font-size: calc(3rem + 2vw);
+    font-size: calc(2.5rem + 2vw);
     color: rgb(140, 106, 44);
     /* background-color: rgba(140, 106, 44, 0.484); */
     border-radius: 50px;
@@ -48,6 +58,7 @@ h4 {
     color: rgb(140, 106, 44);
     font-weight: bold;
 }
+
 
 .btn-logout {
     transition: all .3s ease-in-out;
@@ -95,16 +106,26 @@ h4 {
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 663px){
+@media only screen and (max-width: 1030px){
     .welcomeLogout-container {
-        color: red;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2rem; 
+    }
+    .welcomeLogout-container a {
+        padding-top: 1rem;
+    }
+    .logo-img img {
+        width: 22rem;
+        margin-right: 3rem;
+    }
+    h1 {
+        margin-top:-2rem;
+        padding: 0;
     }   
 }
 
-.welcome {
-    margin: 0 2rem;
-    color: white;
-    padding-top: 0.5rem;
-}
+
+ 
 
 

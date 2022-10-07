@@ -1,6 +1,6 @@
 .ulProduct {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
@@ -9,15 +9,17 @@
 }
 .card-container {
     margin: 2.3rem;
-    position: relative; 
+    /* position: relative;  */
+    max-width: 18rem;
+
 }
 .card-product {
     background-color: white;
     border-radius: 20px;
     box-shadow: 3px 3px 11px -4px #000000;
     padding: 1rem;
-    width: 100%;
-    min-width: 20rem;
+    /* width: 100%; */
+    /* min-width: 20rem; */
     height: 28rem;
     transition: all .2s ease-in-out;
 }

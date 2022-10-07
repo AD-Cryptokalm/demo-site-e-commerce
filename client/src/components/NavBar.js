@@ -53,7 +53,7 @@ const NavBar = () => {
             <Logout />
           </div>
         ) : (
-          <>
+          
             <div className="welcomeLogout-container btn-login">
               <NavLink to={"/connexion"}>
                 <i
@@ -62,7 +62,7 @@ const NavBar = () => {
                 ></i>
               </NavLink>
             </div>
-          </>
+          
         )}
       </div>
     </div>
