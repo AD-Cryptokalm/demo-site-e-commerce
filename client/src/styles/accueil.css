@@ -36,25 +36,115 @@ a {
 }
 .photo {
   width: 22%;
+  
+  /* transform: translateY(100%) rotateX(-80deg);
+  transform-origin: top center;
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: op 3s forwards; */
+  /* margin-bottom: 1rem; */
 }
+/* @keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   
+  }
+} */
 .photo img {
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px -4px #000000;
   object-fit: cover;
 }
 .photo.top {
   margin-bottom: 4rem;
+  /* transform: rotate(-15deg); */
 }
 .photo.bottom {
   margin-top: 10rem;
 }
 #photo1 {
-  transform: rotate(-15deg);
+  transform: rotate();
+  /* transform: translateY(100%) rotateX(-80deg); */
+  /* transform-origin: top center; */
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: op1 3s forwards;
+}
+@keyframes op1 {
+  0% {
+    rotate: 0deg;
+    scale: 0;
+  }
+  100% {
+    rotate: -15deg;
+    scale: 1;
+    /* transform: none; */
+  }
 }
 #photo2 {
-  transform: rotate(10deg);
+  transform: rotate() scale();
+  /* transform: translateY(100%) rotateX(-80deg); */
+  /* transform-origin: top center; */
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: op2 4s forwards;
+}
+@keyframes op2 {
+  0% {
+    rotate: 0deg;
+    scale: 0;
+  }
+  20% {
+    scale: 0;
+  }
+  100% {
+    rotate: 10deg;
+    scale: 1;
+    /* transform: none; */
+  }
+}
+#photo3 {
+  transform: rotate() scale();
+  /* transform: translateY(100%) rotateX(-80deg); */
+  /* transform-origin: top center; */
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: op3 5s forwards;
+}
+@keyframes op3 {
+  0% {
+    rotate: 0deg;
+    scale: 0;
+  }
+  35% {
+    scale: 0;
+  }
+  100% {
+    rotate: -2deg;
+    scale: 1;
+    /* transform: none; */
+  }
 }
 #photo4 {
-  transform: rotate(20deg);
+  transform: rotate() scale();
+  /* transform: translateY(100%) rotateX(-80deg); */
+  /* transform-origin: top center; */
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: op4 6s forwards;
+}
+@keyframes op4 {
+  0% {
+    rotate: 0deg;
+    scale: 0;
+  }
+  45% {
+    scale: 0;
+  }
+  100% {
+    rotate: 20deg;
+    scale: 1;
+    /* transform: none; */
+  }
 }
 .cat-container .wrapper {
   border-left: solid 2px rgb(140, 106, 44);
