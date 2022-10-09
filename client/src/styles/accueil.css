@@ -34,6 +34,11 @@ a {
   width: 88%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1030px){
+  .galerie-container {
+    flex-direction: column; 
+  }   
+}
 .photo {
   width: 22%;
   

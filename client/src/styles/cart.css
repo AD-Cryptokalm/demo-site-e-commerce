@@ -1,5 +1,6 @@
 .order-container {
     width: 70%;
+    max-width: 50rem;
     margin: 4rem auto 25rem;
     background: white;
     /* display: flex; */

@@ -2,13 +2,27 @@ import { isEmpty } from "../components/Utils";
 import "../styles/cart.css";
 
 const Cart = () => {
-  const totalPrice = [];
+  // const prices = document.querySelectorAll(".price");
   const nb = document.getElementById("nb");
   const products = JSON.parse(localStorage.getItem("products"));
-
+  const productPrice = [];
+  // const totalPice = "";
+  
   if (products) {
-    totalPrice.forEach((price) => {});
+    products.forEach((product) => {
+      productPrice.push(product.price);
+      
+    });
+    // console.log(eval(productPrice.join('+')));
+    // totalPice = eval(productPrice.join('+'));
   }
+  const totalPice = eval(productPrice.join('+'))
+  // nb.innerText = products.length;
+  console.log(totalPice)
+  //  totalPice.innerText = (eval(productPrice.join('+'))+ ' €') 
+  
+  
+
   if (!products) {
     return (window.location.href = "/");
   }
@@ -46,8 +60,8 @@ const Cart = () => {
           return null;
         });
         localStorage.setItem("products", JSON.stringify(totalProducts));
-        nb.innerHTML = products.length;
         window.location.reload(true);
+        nb.innerText = products.length;
       }
     }
   };
@@ -66,7 +80,7 @@ const Cart = () => {
                   alt="img produit"
                 />
                 <div>{product.name}</div>
-                <div>{product.price}€</div>
+                <div className="price">{product.price}€</div>
                 <i
                   className="fa-solid fa-trash-can btn-profil deleteItem dataset"
                   onClick={deleteProduct}
@@ -77,7 +91,7 @@ const Cart = () => {
             );
           })}
       </ul>
-      <div className="total-price">Prix total :100€</div>
+      <div className="total-price">Prix total :{totalPice}</div>
       <div className="btn-cmd ">commander</div>
     </div>
   );
