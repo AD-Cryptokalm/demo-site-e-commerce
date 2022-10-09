@@ -2,26 +2,17 @@ import { isEmpty } from "../components/Utils";
 import "../styles/cart.css";
 
 const Cart = () => {
-  // const prices = document.querySelectorAll(".price");
   const nb = document.getElementById("nb");
   const products = JSON.parse(localStorage.getItem("products"));
   const productPrice = [];
-  // const totalPice = "";
-  
+
   if (products) {
     products.forEach((product) => {
-      productPrice.push(product.price);
-      
+      productPrice.push(+product.price);
     });
-    // console.log(eval(productPrice.join('+')));
-    // totalPice = eval(productPrice.join('+'));
   }
-  const totalPice = eval(productPrice.join('+'))
-  // nb.innerText = products.length;
-  console.log(totalPice)
-  //  totalPice.innerText = (eval(productPrice.join('+'))+ ' €') 
-  
-  
+
+  const sum = productPrice.reduce((a, b) => a + b);
 
   if (!products) {
     return (window.location.href = "/");
@@ -91,7 +82,7 @@ const Cart = () => {
             );
           })}
       </ul>
-      <div className="total-price">Prix total :{totalPice}</div>
+      <div className="total-price">Prix total : {sum} €</div>
       <div className="btn-cmd ">commander</div>
     </div>
   );
