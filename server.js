@@ -1,6 +1,7 @@
 const express = require('express')
 const userRoutes = require('./routes/userRoutes')
 const productRoutes = require('./routes/productRoutes')
+const orderRoutes = require('./routes/orderRoutes')
 const path = require("path");
 const cors = require('cors');
 require('dotenv').config({path: './config/.env'})
@@ -26,6 +27,7 @@ app.use(express.json());
 
 app.use('/api/user', userRoutes)
 app.use('/api/product', productRoutes)
+app.use('/api/order', orderRoutes)
 
 app.use("/images", express.static(path.join(__dirname, "images")));
 

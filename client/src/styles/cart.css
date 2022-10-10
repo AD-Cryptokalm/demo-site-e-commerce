@@ -1,7 +1,7 @@
 .order-container {
     width: 70%;
     max-width: 50rem;
-    margin: 4rem auto 25rem;
+    margin: 5rem auto 25rem;
     background: white;
     /* display: flex; */
     font-size: calc(0.5rem + 1.5vw);
@@ -11,11 +11,12 @@
 }
 .allProduct-order {
     width: 100%;
+    margin-bottom: 2rem;
 }
 .product-order {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     align-items: center;
 }
 .img-productOrder {
@@ -24,9 +25,41 @@
     object-fit: cover;
     
 }
-.order-form {
+/* .order-form {
     width: 50vw;
+} */
+.line {
+    width: 85%;
+    height: 2px;
+    margin: 0 auto;
+    background: rgb(140, 106, 44);
+}
+.price-container {
+    margin-top: 1.5rem;
+}
+.shipping {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.total-price {
+    margin-bottom: 2rem;
 }
 .btn-cmd {
-color: blueviolet;
+    cursor: pointer;
+    color: rgb(140, 106, 44);
+    font-size: 2.5rem;
+    border: solid 1px rgb(140, 106, 44);
+    box-shadow: 3px 3px 11px -4px #000000;
+    border-radius: 25px ;
+    width: 30%;
+    margin: 1.5rem auto;
+    /* padding: 0rem 1rem; */
+   
+    transition: all .3s ease-in-out;
+}
+.btn-cmd:hover {
+    transform: scale(1.12);
+    color: white;
+    background: rgb(140, 106, 44);
+    border: solid 1px white; 
 }

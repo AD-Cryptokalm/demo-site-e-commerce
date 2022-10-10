@@ -1,3 +1,6 @@
+import axios from "axios";
+import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 import { isEmpty } from "../components/Utils";
 import "../styles/cart.css";
 
@@ -5,6 +8,7 @@ const Cart = () => {
   const nb = document.getElementById("nb");
   const products = JSON.parse(localStorage.getItem("products"));
   const productPrice = [];
+  const user = useSelector((state) => state.userReducer);
 
   if (products) {
     products.forEach((product) => {
@@ -12,7 +16,7 @@ const Cart = () => {
     });
   }
 
-  const sum = productPrice.reduce((a, b) => a + b);
+  const sum = productPrice.reduce((a, b) => a + b );
 
   if (!products) {
     return (window.location.href = "/");
@@ -57,6 +61,26 @@ const Cart = () => {
     }
   };
 
+  const createOrder = () => {
+    axios({
+      method: "POST",
+      url: "http://localhost:3000/api/order",
+      withCredentials: true,
+      data: {
+        userId: `${user._id}`,
+        firstName: `${user.firstName}`,
+        lastName: `${user.lastName}`,
+        adress: `${user.adress}`,
+        tel: `${user.tel}`,
+        email: `${user.email}`,
+        totalPrice: `${sum}`,
+        
+      }
+    })
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+  } 
+
   JSON.parse(localStorage.getItem("products"));
   return (
     <div className="order-container">
@@ -82,8 +106,14 @@ const Cart = () => {
             );
           })}
       </ul>
-      <div className="total-price">Prix total : {sum} €</div>
-      <div className="btn-cmd ">commander</div>
+      <div className="line"></div>
+      <div className="price-container">
+      <div className="shipping">Frais de livraison : 6 €</div>
+      <div className="total-price">Prix total : {sum + 6}  €</div>
+      <NavLink to="/order">
+      <div className="btn-cmd" onClick={createOrder}>commander</div>
+      </NavLink>
+      </div>
     </div>
   );
 };
