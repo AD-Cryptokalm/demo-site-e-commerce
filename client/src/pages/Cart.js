@@ -9,21 +9,19 @@ const Cart = () => {
   const products = JSON.parse(localStorage.getItem("products"));
   const productPrice = [];
   const user = useSelector((state) => state.userReducer);
-
+  
+  if (!products) {
+    return (window.location.href = "/");
+  }
   if (products) {
     products.forEach((product) => {
       productPrice.push(+product.price);
     });
   }
+  
+  const sum = productPrice.reduce((a, b) => a + b );
 
-  const sum = {
-    if (productPrice) {
-      productPrice.reduce((a, b) => a + b )}
-    }
 
-  if (!products) {
-    return (window.location.href = "/");
-  }
   if (products == null) {
     return [];
   }

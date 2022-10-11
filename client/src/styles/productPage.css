@@ -1,12 +1,18 @@
 .card-Oneproduct {
-    width: 20%;
-    margin: 2rem auto;
+    width: 24%;
+    min-width: 300px;
+    margin: 5rem auto 8rem;
     background-color: white;
     border-radius: 20px;
     box-shadow: 3px 3px 11px -4px #000000;
     position: relative;
     
 }
+@media only screen and (max-width: 780px){
+    .card-Oneproduct {
+        width: 50%; 
+    }   
+  }
 
 
 .img-Oneproduct {
@@ -30,6 +36,16 @@
     right: 0.5rem;
     top: 2.3rem;
 }
+#back {
+    /* left: -16rem; */
+    width: 30rem;
+    margin-left: 1rem;
+}
+@media only screen and (max-width: 1030px){
+    #back {
+      left: -12rem; 
+    }   
+  }
 .description {
     font-size: 2rem;
     padding:  1rem;

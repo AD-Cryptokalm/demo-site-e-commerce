@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/AppContext";
 // import ProductPage from "../pages/Product";
 import "../styles/navBar.css";
@@ -9,6 +9,7 @@ import Logout from "./Log/Logout";
 const NavBar = () => {
   const uid = useContext(AuthContext);
   const userData = useSelector((state) => state.userReducer);
+  const navigate = useNavigate()
 
   let productsArray = JSON.parse(localStorage.getItem("products"));
 
@@ -25,9 +26,9 @@ const NavBar = () => {
             <img src="../../logo.png" alt="logo entreprise" />
           </div>
         </NavLink>
-        <NavLink to="/">
-          <i className="fa-solid fa-left-long icon-back btn-profil"></i>
-        </NavLink>
+        
+          <i onClick={() => navigate(-1)} className="fa-solid fa-left-long icon-back btn-profil"></i>
+        
         <div>
           <h1>Mon Univers Enchanté</h1>
         </div>
