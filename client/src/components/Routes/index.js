@@ -10,6 +10,7 @@ import Divers from '../../pages/Divers'
 import Profil from "../../pages/Profil";
 import Product from "../../pages/Product"
 import Footer from "../Footer"
+import Confirmation from "../../pages/Confirmation";
 
 const index = () => {
   return (
@@ -25,6 +26,7 @@ const index = () => {
         <Route path="/profil" element={<Profil />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

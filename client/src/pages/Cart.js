@@ -16,7 +16,10 @@ const Cart = () => {
     });
   }
 
-  const sum = productPrice.reduce((a, b) => a + b );
+  const sum = {
+    if (productPrice) {
+      productPrice.reduce((a, b) => a + b )}
+    }
 
   if (!products) {
     return (window.location.href = "/");
@@ -74,6 +77,7 @@ const Cart = () => {
         tel: `${user.tel}`,
         email: `${user.email}`,
         totalPrice: `${sum}`,
+        products: products,
         
       }
     })
@@ -111,7 +115,7 @@ const Cart = () => {
       <div className="shipping">Frais de livraison : 6 €</div>
       <div className="total-price">Prix total : {sum + 6}  €</div>
       <NavLink to="/order">
-      <div className="btn-cmd" onClick={createOrder}>commander</div>
+      <div className="btn-cmd" onClick={createOrder}>Commander</div>
       </NavLink>
       </div>
     </div>

@@ -19,6 +19,9 @@
     padding: 2rem;
     align-items: center;
 }
+.product-order .price {
+    margin: 0;
+}
 .img-productOrder {
     width: 6rem;
     height: 6rem;
@@ -43,11 +46,12 @@
 }
 .total-price {
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 .btn-cmd {
     cursor: pointer;
     color: rgb(140, 106, 44);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     border: solid 1px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
     border-radius: 25px ;

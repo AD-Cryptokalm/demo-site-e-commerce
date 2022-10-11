@@ -1,11 +1,20 @@
-import axios from "axios";
+
 import { useSelector } from "react-redux";
+
+import Confirmation from "../pages/Confirmation";
 
 
 const Order = () => {
 
     const user = useSelector((state) => state.userReducer);
+   
 
+    const paiement = () => {
+      
+     if (window.confirm("Merci de vérifier vos coordonnées pour la livraison")) {
+         return <Confirmation/>
+     }
+    }
     // const createOrder = () => {
     //   axios({
     //     method: "POST",
@@ -30,9 +39,9 @@ const Order = () => {
         <div className="adress">{user.adress}</div>
         <div className="tel">{user.tel}</div>
         <div className="email">{user.email}</div>
-      </div>
       <div className="price-order"></div>
-      <button className="send-order" ></button>
+      <div className="send-order btn-cmd" onClick={paiement}>Payer</div>
+      </div>
     </div>
   );
 };

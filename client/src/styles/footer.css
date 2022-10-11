@@ -1,5 +1,5 @@
 .footer {
-    bottom: -15rem;
+    /* bottom: -15rem; */
     width: 97%;
     margin: 0 auto;
     border: solid 3px rgb(140, 106, 44);
@@ -10,8 +10,11 @@
     display: flex;
     justify-content: space-around;
     padding: 1.6rem;
-    position: relative;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: -2rem; */
+    /* left: 50%;
+    transform: translate(-50%); */
+
 }
 .block-footer {
     display: flex;

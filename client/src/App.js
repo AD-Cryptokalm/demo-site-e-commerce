@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { getUser } from "./actions/userAction";
 import { useEffect } from "react";
 
+
 const App = () => {
   const dispatch = useDispatch();
 
@@ -16,11 +17,11 @@ const App = () => {
   })
 
   return (
-    <div className="center">
+    
       <AuthContext.Provider value={uid}>
         <Routes />
       </AuthContext.Provider>
-    </div>
+    
   );
 };
 
