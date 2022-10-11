@@ -1,0 +1,8 @@
+.info-user {
+    display: flex;
+    flex-direction: column;
+    /* height: 30rem; */
+}
+.info-user div {
+    padding: 1rem;
+}

@@ -29,27 +29,18 @@
 .logo-img img {
     margin-left: 2.5rem;
     margin-top: -1rem;
-    /* position: relative; */
     width: 18rem;
 }
 h1 {
     font-size: calc(2.5rem + 2vw);
     color: rgb(140, 106, 44);
-    /* background-color: rgba(140, 106, 44, 0.484); */
     border-radius: 50px;
     padding: 1rem 2rem;
-    /* margin-top: 1rem; */
 }
-
-
-
-
-
 h4 {
     margin-right: 2rem;
     margin-bottom: -5px;
 }
-
 .welcomeLogout-container {
     display: flex;
     font-size: 3rem;
@@ -59,15 +50,12 @@ h4 {
     color: rgb(140, 106, 44);
     font-weight: bold;
 }
-
-
 .btn-logout {
     transition: all .3s ease-in-out;
     cursor: pointer;
     color: rgb(140, 106, 44);
     padding-top: 3rem;
 }
-
 .btn-logout:hover {
     transform: scale(1.12); 
 }
@@ -79,11 +67,9 @@ h4 {
     margin-right: 2rem;
     margin-bottom: 1rem;
 }
-
 .btn-profil:hover {
     transform: scale(1.12); 
 }
-
 .btn-login {
     margin-left: 25rem;
 }
@@ -91,7 +77,6 @@ h4 {
     position: relative;
     margin-right: 1rem;
 }
-
 .number-product-cart {
     position: absolute;
     color: #000000;
@@ -106,7 +91,6 @@ h4 {
     height: 20px;
     border-radius: 20px;
 }
-
 @media only screen and (max-width: 1030px){
     .welcomeLogout-container {
         align-items: center;

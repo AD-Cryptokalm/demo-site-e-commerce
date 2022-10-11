@@ -17,7 +17,7 @@
 }
 .footer .line {
     display: none;
-  }
+}
 @media only screen and (max-width: 730px){
     .block-footer {
       width: 100%;  
@@ -36,9 +36,8 @@
     }  
     .block-footer a{
         font-size: calc(0.5rem + 2vw);
-        
     }
-  }
+}
 .block-footer a{
     font-size: 2.2rem;
     color: rgb(117, 89, 36);
@@ -50,8 +49,8 @@
 }
 .footer a {
     transition: all .3s ease-in-out;
-  }
+}
 .footer  a:hover {
     transform: scale(1.12);
-  }
+}
   

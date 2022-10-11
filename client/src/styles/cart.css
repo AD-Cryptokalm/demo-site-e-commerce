@@ -3,7 +3,6 @@
     max-width: 50rem;
     margin: 5rem auto 25rem;
     background: white;
-    /* display: flex; */
     font-size: calc(0.5rem + 1.5vw);
     border: solid 3px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
@@ -26,11 +25,7 @@
     width: 6rem;
     height: 6rem;
     object-fit: cover;
-    
 }
-/* .order-form {
-    width: 50vw;
-} */
 .line {
     width: 85%;
     height: 2px;
@@ -57,8 +52,6 @@
     border-radius: 25px ;
     width: 30%;
     margin: 1.5rem auto;
-    /* padding: 0rem 1rem; */
-   
     transition: all .3s ease-in-out;
 }
 .btn-cmd:hover {

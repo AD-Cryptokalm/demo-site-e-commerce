@@ -1,6 +1,6 @@
 
 import { useSelector } from "react-redux";
-
+import '../styles/order.css'
 import Confirmation from "../pages/Confirmation";
 
 
@@ -39,8 +39,8 @@ const Order = () => {
         <div className="adress">{user.adress}</div>
         <div className="tel">{user.tel}</div>
         <div className="email">{user.email}</div>
-      <div className="price-order"></div>
-      <div className="send-order btn-cmd" onClick={paiement}>Payer</div>
+        <div className="price-order"></div>
+        <div className="send-order btn-cmd" onClick={paiement}>Payer</div>
       </div>
     </div>
   );

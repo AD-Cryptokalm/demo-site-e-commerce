@@ -36,11 +36,7 @@
     right: 0.5rem;
     top: 2.3rem;
 }
-#back {
-    /* left: -16rem; */
-    width: 30rem;
-    margin-left: 1rem;
-}
+
 @media only screen and (max-width: 1030px){
     #back {
       left: -12rem; 
