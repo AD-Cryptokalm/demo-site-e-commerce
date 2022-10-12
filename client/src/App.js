@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 
 const App = () => {
+  // alert("Ceci est un exemple de site e-commerce. Aucune vente ne sera effectuée")
   const dispatch = useDispatch();
 
   const uid = localStorage.getItem("userId");

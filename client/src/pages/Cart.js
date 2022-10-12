@@ -1,6 +1,8 @@
 import axios from "axios";
-import { useSelector } from "react-redux";
+// import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { getOrder } from "../actions/orderAction";
 import { isEmpty } from "../components/Utils";
 import "../styles/cart.css";
 
@@ -9,6 +11,7 @@ const Cart = () => {
   const products = JSON.parse(localStorage.getItem("products"));
   const productPrice = [];
   const user = useSelector((state) => state.userReducer);
+  const dispatch = useDispatch();
   
   if (!products) {
     return (window.location.href = "/");
@@ -79,9 +82,12 @@ const Cart = () => {
         
       }
     })
-    .then((res) => console.log(res))
+    .then((res) => dispatch(getOrder(res.data.order._id)))
     .catch((err) => console.log(err))
   } 
+
+  
+
 
   JSON.parse(localStorage.getItem("products"));
   return (
