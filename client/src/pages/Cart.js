@@ -82,7 +82,10 @@ const Cart = () => {
         
       }
     })
-    .then((res) => dispatch(getOrder(res.data.order._id)))
+    .then((res) => {
+      dispatch(getOrder(res.data.order._id))
+      localStorage.removeItem("products")
+    })
     .catch((err) => console.log(err))
   } 
 
