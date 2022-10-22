@@ -12,6 +12,7 @@
 
 body {
   text-align: center;
+  background-color: rgba(81, 240, 81, 0.525);
   background-image: url("../../public/woodBackground.png");
   background-repeat: no-repeat;
   background-size: cover;

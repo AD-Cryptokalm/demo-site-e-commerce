@@ -29,7 +29,7 @@ a {
   align-items: center;
   height: 58vh;
   width: 88%;
-  margin: 0 auto;
+  margin: 3rem auto 6rem;
 }
 .photo {
   max-width: 21rem;
@@ -137,7 +137,6 @@ a {
   border-left: solid 2px white;
   border-bottom: solid 2px white;
   border-right: solid 2px white;
-  
 }
 .mess-container {
   color: white;

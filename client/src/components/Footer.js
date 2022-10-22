@@ -5,9 +5,9 @@ const footer = () => {
         <div className="footer">
             <div className="block-footer information">
                 <h3>PLUS D'INFORMATIONS</h3>
-                <a href="/a-propos">Qui sommes nous ?</a>
-                <a href="/mentions-legales">Mentions légales</a>
-                <a href="/politique-confidentialite">Politique de confidentialité</a>
+                <a href="/">Qui sommes nous ?</a>
+                <a href="/">Mentions légales</a>
+                <a href="/">Politique de confidentialité</a>
             <div className="line"></div>
             </div>
             <div className="block-footer mon-compte">
@@ -25,7 +25,7 @@ const footer = () => {
             <div className="block-footer contact">
                 <h3>NOUS CONTACTER</h3>
                 <a href="mailto:mon-univers-enchante@gmail.com">mon-univers-enchante@gmail.com</a>
-                <a href="/">07.50.49.87.49</a>
+                <a href="#">07.50.49.87.49</a>
             </div>
         </div>
     );

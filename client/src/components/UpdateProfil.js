@@ -22,7 +22,6 @@ const UpdateProfil = () => {
 
   return (
     <div className="profil-container">
-      {/* <h2 className="name-profil">Profil de {userData.firstName}</h2> */}
       <div className="connexion-form card">
         <form action="" id="form">
           <label htmlFor="email">Email</label>

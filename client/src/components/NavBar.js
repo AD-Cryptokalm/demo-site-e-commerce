@@ -9,7 +9,7 @@ import Logout from "./Log/Logout";
 const NavBar = () => {
   const uid = useContext(AuthContext);
   const userData = useSelector((state) => state.userReducer);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   let productsArray = JSON.parse(localStorage.getItem("products"));
 
@@ -26,9 +26,12 @@ const NavBar = () => {
             <img src="../../logo.png" alt="logo entreprise" />
           </div>
         </NavLink>
-        
-          <i onClick={() => navigate(-1)} className="fa-solid fa-left-long icon-back btn-profil"></i>
-        
+
+        <i
+          onClick={() => navigate(-1)}
+          className="fa-solid fa-left-long icon-back btn-profil"
+        ></i>
+
         <div>
           <h1>Mon Univers Enchanté</h1>
         </div>
@@ -54,16 +57,14 @@ const NavBar = () => {
             <Logout />
           </div>
         ) : (
-          
-            <div className="welcomeLogout-container btn-login">
-              <NavLink to={"/connexion"}>
-                <i
-                  className="fa-solid fa-right-to-bracket btn-logout"
-                  alt="se connecter"
-                ></i>
-              </NavLink>
-            </div>
-          
+          <div className="welcomeLogout-container btn-login">
+            <NavLink to={"/connexion"}>
+              <i
+                className="fa-solid fa-right-to-bracket btn-logout"
+                alt="se connecter"
+              ></i>
+            </NavLink>
+          </div>
         )}
       </div>
     </div>
