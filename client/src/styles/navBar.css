@@ -12,10 +12,21 @@
     border-radius:  0px 0px 25px 25px;
     position: relative;
 }
+h1 {
+    font-size: calc(2.5rem + 2vw);
+    color: rgb(140, 106, 44);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+}
 @media only screen and (max-width: 1030px){
     .navBar {
-        flex-direction: column;  
-    }   
+        flex-direction: column;
+        width: 100%;  
+    } 
+    h1 {
+       position: relative;
+       top: 10px;
+    }  
 }
 .icon-back {
     position: absolute;
@@ -31,12 +42,7 @@
     margin-top: -1rem;
     width: 18rem;
 }
-h1 {
-    font-size: calc(2.5rem + 2vw);
-    color: rgb(140, 106, 44);
-    border-radius: 50px;
-    padding: 1rem 2rem;
-}
+
 h4 {
     margin-right: 2rem;
     margin-bottom: -5px;

@@ -12,11 +12,12 @@
 
 body {
   text-align: center;
-  background-color: rgba(81, 240, 81, 0.525);
+  background-color: rgba(123, 189, 123, 0.525);
   background-image: url("../../public/woodBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  height: 100vh;
 }
 
 

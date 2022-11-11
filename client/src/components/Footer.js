@@ -4,7 +4,7 @@ const footer = () => {
     return (
         <div className="footer">
             <div className="block-footer information">
-                <h3>PLUS D'INFORMATIONS</h3>
+                <h3>INFORMATIONS</h3>
                 <a href="/">Qui sommes nous ?</a>
                 <a href="/">Mentions légales</a>
                 <a href="/">Politique de confidentialité</a>
@@ -25,7 +25,7 @@ const footer = () => {
             <div className="block-footer contact">
                 <h3>NOUS CONTACTER</h3>
                 <a href="mailto:mon-univers-enchante@gmail.com">mon-univers-enchante@gmail.com</a>
-                <a href="#">07.50.49.87.49</a>
+                <a href="/">07.50.49.87.49</a>
             </div>
         </div>
     );

@@ -49,7 +49,7 @@
 }
 .price-product {
     margin-top: 1.5rem;
-    font-size: 1.6rem;
+    font-size: calc(1.5rem + 1vw);
 }
 
 /* 

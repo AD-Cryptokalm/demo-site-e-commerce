@@ -11,6 +11,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .block-footer {
     display: flex;
@@ -19,10 +23,16 @@
 .footer .line {
     display: none;
 }
+
 @media only screen and (max-width: 730px){
     .block-footer {
-      width: 100%;  
+      width: 100%; 
     }
+    .footer {
+        bottom: -300px;
+        width: 100%; 
+    }
+   
     h3 {
         margin-bottom: 0.6rem;
         margin-top: 0.6rem;

@@ -118,7 +118,8 @@ a {
 }
 @media only screen and (max-width: 1030px){
   .galerie-container {
-   height: 25rem; 
+   height: 25rem;
+   margin-top: 0; 
   } 
     
 }
