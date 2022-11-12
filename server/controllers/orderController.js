@@ -1,4 +1,4 @@
-const Order = require("../models/orderModel");
+const Order = require("../../server/models/orderModel");
 
 exports.createOrder = (req, res) => {
   const orderObject = req.body;
