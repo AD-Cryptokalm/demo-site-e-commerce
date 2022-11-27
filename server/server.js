@@ -24,7 +24,6 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-
 app.use('/api/user', userRoutes)
 app.use('/api/product', productRoutes)
 app.use('/api/order', orderRoutes)

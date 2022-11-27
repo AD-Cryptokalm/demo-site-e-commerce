@@ -30,7 +30,7 @@ exports.getOneUser = (req, res) => {
                 },
               },
           )
-            .then(() => res.status(200).json({ message: "Objet modifié!" }))
+            .then(() => res.status(200).json({ message: "Utilisateur modifié!" }))
             .catch((error) => res.status(401).json({ error }));
         }
       })

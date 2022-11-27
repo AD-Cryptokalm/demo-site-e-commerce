@@ -63,9 +63,6 @@ const SignUpForm = () => {
           } else if (err.response.data.error) {
             passwordError.innerHTML = err.response.data.error;
           }
-          
-          // emailError.innerHTML = err.response.data.email;
-          // passwordError.innerHTML = err.response.data.password;
         });
     }
   };

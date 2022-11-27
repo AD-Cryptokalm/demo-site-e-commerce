@@ -10,8 +10,6 @@ const Logout = () => {
     })
       .then((res) => {
         console.log(res);
-        // localStorage.setItem("token", "");
-        // localStorage.setItem("userId", "");
         localStorage.clear()
         window.location.href = "http://localhost:3001/";
       })
