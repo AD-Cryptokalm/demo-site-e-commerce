@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/AppContext";
-// import ProductPage from "../pages/Product";
 import "../styles/navBar.css";
 import Logout from "./Log/Logout";
 

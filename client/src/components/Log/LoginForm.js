@@ -30,10 +30,10 @@ const LoginForm = () => {
       })
       .catch((err) => {
         console.log(err);
-        if (err.response.data.errors) {
-          emailError.innerHTML = err.response.data.errors.email;
-        } else if (err.response.data.errors) {
-          passwordError.innerHTML = err.response.data.errors.password;
+        if (err.response.data.message) {
+          emailError.innerHTML = err.response.data.message;
+        } else if (err.response.data.error) {
+          passwordError.innerHTML = err.response.data.error;
         }
         setEmail("");
         setPassword("");

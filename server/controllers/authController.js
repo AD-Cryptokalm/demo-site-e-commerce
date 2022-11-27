@@ -17,7 +17,7 @@ exports.signUp = (req, res) => {
       user
         .save()
         .then(() => res.status(201).json({ message: "Utilisateur créé" }))
-        .catch((error) => res.status(400).json({ error }));
+        .catch(() => res.status(400).json({ message: "Veuillez remplir tous les champs" }));
     })
     .catch((error) => res.status(500).json({ error }));
 };

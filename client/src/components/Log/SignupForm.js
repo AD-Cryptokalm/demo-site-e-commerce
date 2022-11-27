@@ -25,6 +25,10 @@ const SignUpForm = () => {
     passwordError.innerHTML = "";
     controlPasswordError.innerHTML = "";
 
+    // if (name === "" || email === "" || password === "" || adress === "" || tel === "" ){
+    //   alert("Veuillez remplir tous les champs")
+    // }
+
     if (password !== controlPassword) {
         controlPasswordError.innerHTML =
           "Les mots de passe ne sont pas identiques";
@@ -44,18 +48,24 @@ const SignUpForm = () => {
       })
         .then(() => {
           setFormSubmit(true);
-        })
-        .catch((err) => {
-          console.log(err);
           setName("");
           setEmail("");
           setPassword("");
           setControlPassword("");
           setAdress("");
           setTel("");
+        })
+        .catch((err) => {
+          console.log(err);
+          if (err.response.data.message) {
+            console.log("testy")
+            emailError.innerHTML = err.response.data.message;
+          } else if (err.response.data.error) {
+            passwordError.innerHTML = err.response.data.error;
+          }
           
-          emailError.innerHTML = err.response.data.email;
-          passwordError.innerHTML = err.response.data.password;
+          // emailError.innerHTML = err.response.data.email;
+          // passwordError.innerHTML = err.response.data.password;
         });
     }
   };

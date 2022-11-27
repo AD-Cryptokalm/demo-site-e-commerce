@@ -1,6 +1,5 @@
 .footer {
-    width: 97%;
-    /* height: 25rem; */
+    width: 100%;
     margin: 0 auto;
     border: solid 3px rgb(140, 106, 44);
     box-shadow: 3px 3px 11px -4px #000000;
@@ -11,10 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
-    position: absolute;
     bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .block-footer {
     display: flex;
@@ -32,7 +28,6 @@
         bottom: -300px;
         width: 100%; 
     }
-   
     h3 {
         margin-bottom: 0.6rem;
         margin-top: 0.6rem;

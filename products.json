@@ -1,0 +1,165 @@
+[{
+  "_id": {
+    "$oid": "632c57d5d19c68670bc76354"
+  },
+  "categorie": "bijoux",
+  "name": "collier4",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_143925.png1663850453726.png",
+  "price": "35",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c57d7d19c68670bc76356"
+  },
+  "categorie": "bijoux",
+  "name": "collier4",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_143925.png1663850455879.png",
+  "price": "27",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c57d9d19c68670bc76358"
+  },
+  "categorie": "bijoux",
+  "name": "collier4",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_143925.png1663850457467.png",
+  "price": "38",
+  "__v": 0,
+  "description": "Boucle d'oreille en pin et résine epoxy bleu. Fermoir en acier chirurgical. "
+},{
+  "_id": {
+    "$oid": "632c57dfd19c68670bc7635a"
+  },
+  "categorie": "bijoux",
+  "name": "collier4",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_143925.png1663850463659.png",
+  "price": "32",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c57e0d19c68670bc7635c"
+  },
+  "categorie": "bijoux",
+  "name": "collier4",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_143925.png1663850464628.png",
+  "price": "28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58b6d19c68670bc7636e"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850678489.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58b7d19c68670bc76370"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850679374.png",
+  "price": "30",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58b8d19c68670bc76372"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850680315.png",
+  "price": "29",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58bad19c68670bc76374"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850682181.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58bad19c68670bc76376"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850682902.png",
+  "price": "35",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c58bbd19c68670bc76378"
+  },
+  "categorie": "bracelet",
+  "name": "bracelet",
+  "imageUrl": "http://localhost:3000/images/Capture_d’écran_2022-09-22_144400.png1663850683650.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5dead19c68670bc7637e"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852010336.png",
+  "price": "17",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5debd19c68670bc76380"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852011076.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5debd19c68670bc76382"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852011812.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5decd19c68670bc76384"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852012546.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5dedd19c68670bc76386"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852013366.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "632c5dedd19c68670bc76388"
+  },
+  "categorie": "divers",
+  "name": "encens",
+  "imageUrl": "http://localhost:3000/images/encens.png1663852013988.png",
+  "price": "38",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6333719caefe9ed7c61511fa"
+  },
+  "categorie": "bijoux",
+  "name": "collier6",
+  "imageUrl": "http://localhost:3000/images/bijoux.png1664315804369.png",
+  "price": "38",
+  "description": "collier en pin et résine epoxi bleu. tous nos fermoirs sont en acier chirugical",
+  "__v": 0
+}]
